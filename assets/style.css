@@ -1,0 +1,23 @@
+:root{--indigo:#4F46E5;--coral:#FF6B4A;--green:#10B981;--ink:#14142B;--muted:#5B5B76;--bg:#F7F7FB;--card:#FFFFFF;--line:#E6E6F0}
+@media (prefers-color-scheme:dark){:root{--ink:#EDEDF7;--muted:#A9A9C2;--bg:#12121F;--card:#1A1A2C;--line:#2C2C44}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+header{background:linear-gradient(135deg,var(--indigo),#7C3AED);color:#fff}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.1rem;color:#fff;text-decoration:none}
+.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#fff3,#fff1);display:grid;place-items:center;font-weight:800}
+nav a{color:#fff;opacity:.9;text-decoration:none;margin-left:14px;font-size:.95rem}nav a:hover{opacity:1;text-decoration:underline}
+.hero{padding:28px 0 40px}.hero h1{margin:0 0 8px;font-size:2rem;line-height:1.2}.hero p{margin:0;opacity:.92;max-width:620px}
+main{padding:28px 0 48px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;margin:0 0 16px}
+h2{font-size:1.25rem;margin:28px 0 10px}h3{font-size:1.05rem;margin:18px 0 6px}
+a{color:var(--indigo)}@media (prefers-color-scheme:dark){a{color:#A5A1FF}}
+.muted{color:var(--muted)}.small{font-size:.9rem}
+.btn{display:inline-block;background:var(--coral);color:#fff;padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.pill{display:inline-block;font-size:.8rem;padding:3px 10px;border-radius:999px;background:#10B98122;color:var(--green);font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:.95rem}td,th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+details{border-bottom:1px solid var(--line);padding:10px 0}summary{cursor:pointer;font-weight:600}
+footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:.9rem}
+footer a{margin-right:14px}
